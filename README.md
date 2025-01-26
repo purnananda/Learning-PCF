@@ -67,10 +67,17 @@ Run the project.
     PS D:\Project\Learning PCF\solutions> pac solution init --publisher-name pnbehera --publisher-prefix pb
 ```
 
+4. Add reference for PCF control in the solution file.
+
+```sh
+    PS D:\Project\Learning PCF\solutions>pac solution add-reference --path "D:\Project\Learning PCF"
+```
+
 ### In DOS Command Window
 
 1. Build the solution for the PCF component:
 
+Note: If the msbuild command is not recognized, locate the MSBuild.exe file in your Visual Studio installation folder and add its path to the PATH environment variable. After that, restart the command prompt, and the solution should build successfully.
 ```sh
 D:\Project\Learning PCF\solutions> msbuild /t:build /restore
 ```
